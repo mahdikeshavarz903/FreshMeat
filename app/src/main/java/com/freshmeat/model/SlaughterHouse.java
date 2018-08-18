@@ -1,4 +1,5 @@
 package com.freshmeat.model;
 
-public class LogIn {
+public class SlaughterHouse {
+
 }
