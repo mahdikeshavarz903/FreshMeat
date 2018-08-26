@@ -54,5 +54,6 @@ public class Customer extends User {
 
     public void submitOrder(Orders order) {
         //TODO : submit order
+        // create new transaction
     }
 }

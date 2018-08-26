@@ -6,6 +6,7 @@ public class Slaughterhouse {
     private Doctor doctor;
     private Provider provider;
 
+
     public String getName() {
         return name;
     }
