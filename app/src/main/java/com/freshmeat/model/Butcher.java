@@ -4,13 +4,12 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-public class Butcher extends User
-{
-    private ArrayList<Post> post;
+public class Butcher extends User {
+    private ArrayList<Post> posts;
     private ArrayList<Product> product;
     private ButcherPermissions butcherPermissions;
     private LicenceActivity licenceActivity;
-    private SlaughterHouse slaughterHouse;
+    private Slaughterhouse slaughterhouse;
     private Rate rate;
     private ImageView butcherLogo;
     private ArrayList<Orders> orders;
@@ -31,12 +30,12 @@ public class Butcher extends User
         this.butcherLogo = butcherLogo;
     }
 
-    public void setPost(Post p) {
-        this.post.add(p);
+    public void setPosts(Post p) {
+        this.posts.add(p);
     }
 
-    public ArrayList<Post> getPost() {
-        return post;
+    public ArrayList<Post> getPosts() {
+        return posts;
     }
 
     public ArrayList<Product> getProduct() {
@@ -71,32 +70,28 @@ public class Butcher extends User
         this.licenceActivity = licenceActivity;
     }
 
-    public SlaughterHouse getSlaughterHouse() {
-        return slaughterHouse;
+    public Slaughterhouse getSlaughterhouse() {
+        return slaughterhouse;
     }
 
-    public void setSlaughterHouse(SlaughterHouse slaughterHouse) {
-        this.slaughterHouse = slaughterHouse;
+    public void setSlaughterhouse(Slaughterhouse slaughterhouse) {
+        this.slaughterhouse = slaughterhouse;
     }
 
-    public boolean statusOrder()
-    {
+    public boolean statusOrder() {
         //TODO : status order
         return true;
     }
 
-    public void createProduct()
-    {
+    public void createProduct() {
         //TODO : add new product for butcher
     }
 
-    public void removeProduct()
-    {
+    public void removeProduct() {
         //TODO : remove butcher product from database
     }
 
-    public void editProduct()
-    {
+    public void editProduct() {
         //TODO : edit butcher product
     }
 

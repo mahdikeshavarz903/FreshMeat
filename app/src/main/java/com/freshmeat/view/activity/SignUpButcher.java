@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.freshmeat.R;
 
-public class SignUp extends AppCompatActivity {
+public class SignUpButcher extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

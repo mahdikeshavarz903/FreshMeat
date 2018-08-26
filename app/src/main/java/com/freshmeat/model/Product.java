@@ -69,4 +69,12 @@ public class Product
     public void setImageView(ImageView[] imageView) {
         this.imageView = imageView;
     }
+
+    public ProductCategory getCategory() {
+        return category;
+    }
+
+    public void setCategory(ProductCategory category) {
+        this.category = category;
+    }
 }

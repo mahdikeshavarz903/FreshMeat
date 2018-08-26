@@ -3,6 +3,9 @@ package com.freshmeat.model;
 public class Customer extends User
 {
     private Orders orders;
+    private CustomerFavorite favorite;
+    private Score score;
+    private TransactionHistory transactionHistory;
 
     public void submitOrder()
     {

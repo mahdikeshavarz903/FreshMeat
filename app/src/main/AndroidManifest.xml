@@ -21,7 +21,7 @@
         <activity android:name=".view.activity.Login" />
         <activity android:name=".view.activity.Favorite" />
         <activity android:name=".view.activity.Splash" />
-        <activity android:name=".view.activity.SignUp" />
+        <activity android:name=".view.activity.SignUpButcher" />
         <activity android:name=".view.activity.AdminProfile" />
         <activity android:name=".view.activity.CustomerProfile" />
         <activity android:name=".view.activity.ButcherProfile" />

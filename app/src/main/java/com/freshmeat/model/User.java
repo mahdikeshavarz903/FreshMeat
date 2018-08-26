@@ -7,14 +7,14 @@ public class User
     private String lastName;
     private String phoneNumber;
     private String emailAddress;
-    private String address;
+    private Address address;
     private String birthdayDate;
-    private String city;
+
 
     public User() {
     }
 
-    public User(int nationalCode, String firstName, String lastName, String phoneNumber, String emailAddress, String address, String birthdayDate, String city) {
+    public User(int nationalCode, String firstName, String lastName, String phoneNumber, String emailAddress, Address address, String birthdayDate) {
         this.nationalCode = nationalCode;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,7 +22,6 @@ public class User
         this.emailAddress = emailAddress;
         this.address = address;
         this.birthdayDate = birthdayDate;
-        this.city = city;
     }
 
     public int getNationalCode() {
@@ -65,11 +64,11 @@ public class User
         this.emailAddress = emailAddress;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -81,11 +80,4 @@ public class User
         this.birthdayDate = birthdayDate;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
 }
