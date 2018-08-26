@@ -8,7 +8,6 @@ public class Butcher extends User {
     private ArrayList<Post> posts;
     private ArrayList<Product> product;
     private ButcherPermissions butcherPermissions;
-    private LicenceActivity licenceActivity;
     private Slaughterhouse slaughterhouse;
     private Rate rate;
     private ImageView butcherLogo;
@@ -60,14 +59,6 @@ public class Butcher extends User {
 
     public void setButcherPermissions(ButcherPermissions butcherPermissions) {
         this.butcherPermissions = butcherPermissions;
-    }
-
-    public LicenceActivity getLicenceActivity() {
-        return licenceActivity;
-    }
-
-    public void setLicenceActivity(LicenceActivity licenceActivity) {
-        this.licenceActivity = licenceActivity;
     }
 
     public Slaughterhouse getSlaughterhouse() {

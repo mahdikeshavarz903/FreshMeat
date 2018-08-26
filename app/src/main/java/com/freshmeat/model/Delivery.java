@@ -1,7 +1,6 @@
 package com.freshmeat.model;
 
-public class Delivery
-{
+public class Delivery {
     private int deliveryId;
     private Schedule schedule;
     private Customer customer;

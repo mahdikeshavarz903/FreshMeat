@@ -1,5 +1,7 @@
 package com.freshmeat.model;
 
+import android.widget.ImageView;
+
 public class User
 {
     private int nationalCode;
@@ -9,6 +11,7 @@ public class User
     private String emailAddress;
     private Address address;
     private String birthdayDate;
+    private ImageView[] userPhoto;
 
 
     public User() {
@@ -22,6 +25,14 @@ public class User
         this.emailAddress = emailAddress;
         this.address = address;
         this.birthdayDate = birthdayDate;
+    }
+
+    public ImageView[] getUserPhoto() {
+        return userPhoto;
+    }
+
+    public void setUserPhoto(ImageView[] userPhoto) {
+        this.userPhoto = userPhoto;
     }
 
     public int getNationalCode() {

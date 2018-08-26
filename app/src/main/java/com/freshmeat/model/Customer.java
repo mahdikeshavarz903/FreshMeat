@@ -1,35 +1,58 @@
 package com.freshmeat.model;
 
-public class Customer extends User
-{
+import java.util.ArrayList;
+
+public class Customer extends User {
     private Orders orders;
     private CustomerFavorite favorite;
     private Score score;
-    private TransactionHistory transactionHistory;
+    private ArrayList<Transaction> transaction;
 
-    public void submitOrder()
-    {
-        Delivery delivery=new Delivery();
-        Schedule schedule=new Schedule();
-
-        //TODO : customer submit order
-
-        orders.setDelivery(delivery);
-        orders.setSchedule(schedule);
+    public Orders getOrders() {
+        return orders;
     }
 
-    public void createOrder()
-    {
-        orders=new Orders();
+    public void setOrders(Orders orders) {
+        this.orders = orders;
     }
 
-    public void addNewProductToOrder()
-    {
+    public CustomerFavorite getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(CustomerFavorite favorite) {
+        this.favorite = favorite;
+    }
+
+    public Score getScore() {
+        return score;
+    }
+
+    public void setScore(Score score) {
+        this.score = score;
+    }
+
+    public ArrayList<Transaction> getTransaction() {
+        return transaction;
+    }
+
+    public void setTransaction(Transaction transaction) {
+        this.transaction.add(transaction);
+    }
+
+    public void createOrder() {
+        orders = new Orders();
+    }
+
+    public void addNewProductToOrder() {
         //TODO : add new product to order
     }
 
-    public void removeProductFromOrder()
-    {
+    public void removeProductFromOrder() {
         //TODO : remove product from order
+    }
+
+    public void submitOrder(Orders order) {
+        //TODO : submit order
     }
 }
